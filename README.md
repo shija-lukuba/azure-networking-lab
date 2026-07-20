@@ -188,9 +188,7 @@ After completing deployment and connectivity testing, the Azure virtual network 
 </p>
 <br />
 
-<p>
-Lessons Learned
-</p>
+<h2>Lessons Learned</h2>
 <p>
   
 - Azure NSGs operate independently from Windows Defender Firewall.
