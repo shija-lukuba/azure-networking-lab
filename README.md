@@ -31,10 +31,11 @@ This project demonstrates the deployment and configuration of a Microsoft Azure 
 <h2>Lifecycle Stages</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1904" height="912" alt="Azure Networking Lab Screenshot 1" src="https://github.com/user-attachments/assets/217ca34d-09ae-4495-9342-1e84b9889584" />
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Figure 1 – Successfully created the Azure Resource Group that will contain all networking resources for this lab.
 </p>
 <br />
 
