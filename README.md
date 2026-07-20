@@ -35,12 +35,14 @@ This project demonstrates the deployment and configuration of a Microsoft Azure 
 
 - Windows (Windows 10 Enterprise)</b> (21H2)
 
-<h2>Deployment Process</h2>
+<h2>Project Objectives</h2>
 
-- Environment & Architecture
-- Connectivity Testing
-- Troubleshooting
-- Network Security Group (NSG) Testing
+- Deploy two Windows virtual machines in Azure.
+- Configure a Virtual Network and subnet.
+- Verify Remote Desktop connectivity.
+- Test ICMP communication.
+- Configure Azure Network Security Groups.
+- Troubleshoot network connectivity issues.
 
 <h2>Lab Walkthrough</h2>
 
@@ -63,7 +65,7 @@ A virtual network named VNET-AzureLab was deployed within the RG-AzureNetworking
 <br />
 
 <p>
-Figure 3 – Successfully deployed the first Windows 11 virtual machine (VM-Client-01) within the Azure virtual network.
+Figure 3 – Successfully deployed the first Windows 10 Enterprise virtual machine (VM-Client-01) within the Azure virtual network.
 <img width="1900" height="911" alt="Azure Networking Lab Screenshot 3" src="https://github.com/user-attachments/assets/3e9a6b5a-a6f0-4177-a84a-5d9ee1fd0895" />
 </p>
 <p>
@@ -74,7 +76,7 @@ During deployment, the virtual machine was associated with the Subnet-Production
 <br />
 
 <p>
-Figure 4 – Successfully deployed the second Windows 11 virtual machine within the same Azure virtual network to enable internal network communication and connectivity testing.
+Figure 4 – A second Windows 10 Enterprise virtual machine within the same Azure virtual network to enable internal network communication and connectivity testing.
 <img width="1918" height="912" alt="Azure Networking Lab Screenshot 4" src="https://github.com/user-attachments/assets/f67cab0b-74d6-4a9a-9ba4-2cdf9fd73299" />
 </p>
 <p>
@@ -121,6 +123,7 @@ Figure 8 – Initial ICMP connectivity test failed while attempting to communica
 <img width="1914" height="1031" alt="Azure Networking Lab Screenshot 8" src="https://github.com/user-attachments/assets/376fac8f-cdef-4c1f-b801-61b8d7e677ea" />
 </p>
 <p>
+The initial connectivity test failed despite both virtual machines residing on the same virtual network. This indicated that additional troubleshooting was required to determine whether the issue originated within Azure networking or the guest operating system.
 </p>
 <br />
 
@@ -129,6 +132,7 @@ Figure 9 – Enabled the Windows Defender Firewall rule allowing inbound ICMP Ec
 <img width="1910" height="1028" alt="Azure Networking Lab Screenshot 9" src="https://github.com/user-attachments/assets/8eecb419-6112-4254-97fa-6c57bc69b238" />
 </p>
 <p>
+Investigation revealed that Windows Defender Firewall was blocking inbound ICMP Echo Requests. Enabling the built-in firewall rule allowed the virtual machines to respond to ping requests over the private network.
 </p>
 <br />
 
@@ -194,5 +198,7 @@ Lessons Learned
 - Connectivity testing should isolate Azure networking before modifying VM settings.
 - Azure Resource Groups simplify management.
 - Validating changes before and after implementation reduces troubleshooting time.
+
+This lab provided hands-on experience deploying Azure infrastructure, configuring network security, troubleshooting connectivity issues, and validating secure communication between virtual machines using Microsoft Azure.
 </p>
 <br />
