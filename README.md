@@ -2,23 +2,24 @@
 <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
 
-<h1>osTicket - Ticket Lifecycle: Intake Through Resolution</h1>
-This tutorial outlines the lifecycle of a ticket from intake to resolution within the open-source help desk ticketing system osTicket.<br />
-
-
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How to create, work, and resolves tickets within osTicket](https://www.youtube.com)
+<h1>Project Summary</h1>
+This project demonstrates the deployment and configuration of a Microsoft Azure virtual network consisting of multiple Windows virtual machines. The lab covers virtual networking, remote administration through Remote Desktop Protocol (RDP), Network Security Group (NSG) configuration, connectivity testing, troubleshooting, and Azure resource cleanup.<br />
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
-- Internet Information Services (IIS)
+- Microsoft Azure
+- Windows 11 Pro Virtual Machines
+- Azure Virtual Network
+- Azure Network Security Groups
+- Virtual Machines
+- Remote Desktop Protocol (RDP)
+- ICMP (Ping)
+- DNS
+- TCP/IP Networking
 
 <h2>Operating Systems Used </h2>
 
-- Windows 10</b> (21H2)
+- Windows 11 Pro</b> (21H2)
 
 <h2>Ticket Lifecycle Stages</h2>
 
