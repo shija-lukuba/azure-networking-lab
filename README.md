@@ -31,26 +31,30 @@ This project demonstrates the deployment and configuration of a Microsoft Azure 
 <h2>Lifecycle Stages</h2>
 
 <p>
-<img width="1904" height="912" alt="Azure Networking Lab Screenshot 1" src="https://github.com/user-attachments/assets/217ca34d-09ae-4495-9342-1e84b9889584" />
-
-</p>
-<p>
 Figure 1 – Successfully created the Azure Resource Group that will contain all networking resources for this lab.
+<img width="1904" height="912" alt="Azure Networking Lab Screenshot 1" src="https://github.com/user-attachments/assets/217ca34d-09ae-4495-9342-1e84b9889584" />
+</p>
+<p>
+A dedicated Azure Resource Group named RG-AzureNetworkingLab was created in the East US 2 region. This Resource Group serves as the central container for all Azure resources used throughout the lab, making deployment, organization, and cleanup more efficient.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Figure 2 – Azure Virtual Network and subnet successfully created to provide private network connectivity between virtual machines.
+<img width="1916" height="913" alt="Azure Networking Lab Screenshot 2" src="https://github.com/user-attachments/assets/24cbe581-ae6a-48b8-9101-88400911df72" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+A virtual network named VNET-AzureLab was deployed within the RG-AzureNetworkingLab resource group in the East US 2 region. The network was configured with a 10.0.0.0/16 address space and includes a dedicated subnet named Subnet-Production using the 10.0.1.0/24 address range. This virtual network provides private connectivity for the virtual machines deployed later in the lab.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Figure 3 – Successfully deployed the first Windows 11 virtual machine (VM-Client-01) within the Azure virtual network.
+<img width="1900" height="911" alt="Azure Networking Lab Screenshot 3" src="https://github.com/user-attachments/assets/3e9a6b5a-a6f0-4177-a84a-5d9ee1fd0895" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+The first virtual machine, VM-Client-01, was deployed within the VNET-AzureLab virtual network using the Windows 11 Pro operating system. A public IP address was automatically assigned to support Remote Desktop (RDP) connectivity, while the virtual machine also received a private IP address for internal communication within the virtual network.
+
+During deployment, the virtual machine was associated with the Subnet-Production subnet and configured to allow inbound RDP (TCP port 3389) traffic through its Network Security Group.
 </p>
 <br />
