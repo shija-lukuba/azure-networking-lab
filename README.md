@@ -33,7 +33,7 @@ This project demonstrates the deployment and configuration of a Microsoft Azure 
 
 <h2>Operating Systems Used </h2>
 
-- Windows (Windows 10 Enterprise)</b> (21H2)
+- - Windows (Windows 10 Enterprise, 21H2)
 
 <h2>Project Objectives</h2>
 
