@@ -69,18 +69,18 @@ Figure 3 – Successfully deployed the first Windows 10 Enterprise virtual machi
 <img width="1900" height="911" alt="Azure Networking Lab Screenshot 3" src="https://github.com/user-attachments/assets/3e9a6b5a-a6f0-4177-a84a-5d9ee1fd0895" />
 </p>
 <p>
-The first virtual machine, VM-Client-01, was deployed within the VNET-AzureLab virtual network using the Windows 11 Pro operating system. A public IP address was automatically assigned to support Remote Desktop (RDP) connectivity, while the virtual machine also received a private IP address for internal communication within the virtual network.
+The first virtual machine, VM-Client-01, was deployed within the VNET-AzureLab virtual network using the Windows 10 Enterprise. A public IP address was automatically assigned to support Remote Desktop (RDP) connectivity, while the virtual machine also received a private IP address for internal communication within the virtual network.
 
 During deployment, the virtual machine was associated with the Subnet-Production subnet and configured to allow inbound RDP (TCP port 3389) traffic through its Network Security Group.
 </p>
 <br />
 
 <p>
-Figure 4 – A second Windows 10 Enterprise virtual machine within the same Azure virtual network to enable internal network communication and connectivity testing.
+Figure 4 – A second Windows 10 virtual machine within the same Azure virtual network to enable internal network communication and connectivity testing.
 <img width="1918" height="912" alt="Azure Networking Lab Screenshot 4" src="https://github.com/user-attachments/assets/f67cab0b-74d6-4a9a-9ba4-2cdf9fd73299" />
 </p>
 <p>
-A second Windows 11 virtual machine, VM-Client-02, was deployed into the same VNET-AzureLab virtual network and Subnet-Production subnet. Like the first virtual machine, it was configured with a public IP address for Remote Desktop (RDP) access and a private IP address for internal communication.
+A second Windows 10 virtual machine, VM-Client-02, was deployed into the same VNET-AzureLab virtual network and Subnet-Production subnet. Like the first virtual machine, it was configured with a public IP address for Remote Desktop (RDP) access and a private IP address for internal communication.
 
 Deploying both virtual machines within the same virtual network provides an environment for testing connectivity, validating Network Security Group (NSG) rules, and troubleshooting common networking scenarios.
 </p>
@@ -180,7 +180,7 @@ This validation demonstrated how Azure Network Security Groups can be used to te
 <br />
 
 <p>
-Figure 14 – Both Windows 11 virtual machines connected to the same Azure Virtual Network (VNET-AzureLab), enabling private network communication and centralized network management.
+Figure 14 – Both Windows virtual machines connected to the same Azure Virtual Network (VNET-AzureLab), enabling private network communication and centralized network management.
 <img width="1665" height="854" alt="Azure Networking Lab Screenshot 14" src="https://github.com/user-attachments/assets/55728a44-36fc-4fd0-a5e8-bff8e186a33d" />
 </p>
 <p>
