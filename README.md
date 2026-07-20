@@ -5,6 +5,20 @@
 <h1>Project Summary</h1>
 This project demonstrates the deployment and configuration of a Microsoft Azure virtual network consisting of multiple Windows virtual machines. The lab covers virtual networking, remote administration through Remote Desktop Protocol (RDP), Network Security Group (NSG) configuration, connectivity testing, troubleshooting, and Azure resource cleanup.<br />
 
+<h1>Skills Demonstrated</h1>
+
+- Microsoft Azure
+- Azure Virtual Networks
+- Azure Resource Groups
+- Windows Virtual Machines
+- Remote Desktop Protocol (RDP)
+- Network Security Groups
+- Windows Defender Firewall
+- ICMP Connectivity Testing
+- PowerShell
+- Network Troubleshooting
+<br />
+
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure
@@ -28,7 +42,7 @@ This project demonstrates the deployment and configuration of a Microsoft Azure 
 - Troubleshooting
 - Network Security Group (NSG) Testing
 
-<h2>Lessons Learned</h2>
+<h2>Lab Walkthrough</h2>
 
 <p>
 Figure 1 – Successfully created the Azure Resource Group that will contain all networking resources for this lab.
@@ -162,10 +176,23 @@ This validation demonstrated how Azure Network Security Groups can be used to te
 <br />
 
 <p>
-Figure 15 – Both Windows 11 virtual machines connected to the same Azure Virtual Network (VNET-AzureLab), enabling private network communication and centralized network management.
+Figure 14 – Both Windows 11 virtual machines connected to the same Azure Virtual Network (VNET-AzureLab), enabling private network communication and centralized network management.
 <img width="1665" height="854" alt="Azure Networking Lab Screenshot 14" src="https://github.com/user-attachments/assets/55728a44-36fc-4fd0-a5e8-bff8e186a33d" />
 </p>
 <p>
 After completing deployment and connectivity testing, the Azure virtual network was reviewed to verify that both virtual machines were connected to the same virtual network and subnet. Hosting both systems within the same network enabled private IP communication, Remote Desktop administration, and Network Security Group testing throughout the lab. This final review confirmed that the Azure infrastructure was configured correctly before the environment was cleaned up.
+</p>
+<br />
+
+<p>
+Lessons Learned
+</p>
+<p>
+  
+- Azure NSGs operate independently from Windows Defender Firewall.
+- ICMP is blocked by default by Windows Firewall.
+- Connectivity testing should isolate Azure networking before modifying VM settings.
+- Azure Resource Groups simplify management.
+- Validating changes before and after implementation reduces troubleshooting time.
 </p>
 <br />
